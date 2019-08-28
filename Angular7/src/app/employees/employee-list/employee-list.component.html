@@ -1,0 +1,13 @@
+<table class="table table-hover">
+    
+         <tr *ngFor="let pd of service.lista">
+            <td>{{pd.FullName}}</td>
+            <td>{{pd.EPMCode}}</td>
+            <td>{{pd.Mobile}}</td>
+            <td>{{pd.Position}}</td>
+            <td>
+                <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.EmployeeID)"></i>
+            </td>
+        </tr>
+    </table>
+    
